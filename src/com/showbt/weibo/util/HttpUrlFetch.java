@@ -25,6 +25,7 @@ public class HttpUrlFetch {
 		try {
 			URL url = new URL(spec+params);
 			HTTPRequest request = new HTTPRequest(url,HTTPMethod.GET);
+			request.getFetchOptions().setDeadline(10d);
 			response = urlFetch.fetch(request);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -40,6 +41,7 @@ public class HttpUrlFetch {
 		try {
 			URL url = new URL(spec);
 			HTTPRequest request = new HTTPRequest(url,HTTPMethod.POST,FetchOptions.Builder.allowTruncate());
+			request.getFetchOptions().setDeadline(10d);
 			request.setPayload(params.getBytes());
 			response = urlFetch.fetch(request);
 		} catch (MalformedURLException e) {
