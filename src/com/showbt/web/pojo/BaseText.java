@@ -29,6 +29,9 @@ public abstract class BaseText {
 	 * 图片
 	 */
 	private String picture;
+	
+	private String thumb;
+	
 	@Transient
 	private String[] pictures;
 	
@@ -107,6 +110,13 @@ public abstract class BaseText {
 	}
 	public void setTag(String tag) {
 		this.tag = tag;
+	}
+	
+	public String getThumb() {
+		return thumb;
+	}
+	public void setThumb(String thumb) {
+		this.thumb = thumb;
 	}
 	@Override
 	public String toString() {
