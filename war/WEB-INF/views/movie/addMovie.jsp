@@ -2,14 +2,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<%@ include file="/WEB-INF/views/head.jsp" %>
 <script src="/nej/src/define.js"></script>
 <style type="text/css">
 #myEditor .w-edt{width:100%;padding: 5px;}
 </style>
 </head>
 <body>
-<%@ include file="/WEB-INF/views/top.jsp" %>
 <div id="postTextArea" class="postTextArea g-bd2"> 
 	<div class="g-bdc">
 	<form action="./addMovieDo" method="post" id="addMovieForm">
@@ -87,6 +85,5 @@
 	</form>
 	</div>
 </div>
-<%@ include file="/WEB-INF/views/foot.jsp" %>
 </body>
 </html>
